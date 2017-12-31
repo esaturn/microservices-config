@@ -5,7 +5,7 @@ server:
 # for server discovery
 eureka:
   instance:
-    hostname: localhost
+    hostname: 192.168.252.21
 
     leaseRenewalIntervalInSeconds: 5
   client:
