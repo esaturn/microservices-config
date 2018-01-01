@@ -7,7 +7,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
   instance:
-    instance-id: Baghali
+    instanceId: ${spring.application.name}:${random.int}
 
 ---
 spring:
@@ -19,7 +19,7 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery-service:8761/eureka/
   instance:
-    instance-id: ${spring.application.name}:${random.int}
-
-server:
-  port: 8080
+    instanceId: ${spring.application.name}:${random.int}
+#
+#server:
+#  port: 8080
